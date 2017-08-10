@@ -12,3 +12,6 @@ python .py的文件路径  //执行文件
 //wxpython install
 
 brew install wxpython
+
+
+//创建文件 touch PY.py

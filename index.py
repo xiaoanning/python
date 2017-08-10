@@ -10,6 +10,12 @@
             函数
         GUI
         
+        string
+        列表list
+        字典dict
+        元组tuple
+        集合set
+        
         
     
     

@@ -1,0 +1,2 @@
+
+{'fromDate': '2017-07-20', 'bookingTime': '2017-07-14 15:00:00', 'priorityType': '1', 'seatTypeList': ['\xe4\xba\x8c\xe7\xad\x89\xe5\xba\xa7'], 'toStation': '%u90A2%u53F0%2CXTP', 'passengerList': [u'\u8d75\u5c0f\u65ed'], 'trainNumList': ['G309', 'G655', 'G6741', 'G65', 'G429'], 'fromStation': '%u5317%u4EAC%2CBJP'}
