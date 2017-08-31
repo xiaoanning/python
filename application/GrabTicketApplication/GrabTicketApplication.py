@@ -159,9 +159,9 @@ def ticketHelper():
         #高级设置  1 席别优先 2 车次优先
         brow.find_by_value(currentCustomerInfo.priorityType)[0].click()
         #自动提交
-        brow.find_by_id("autoSubmit").click()
+        # brow.find_by_id("autoSubmit").click()
         # 余票不足时部分提交
-        brow.find_by_id("partSubmit").click()
+        # brow.find_by_id("partSubmit").click()
 
 #选择乘车人
 def selectPassenger():
@@ -309,7 +309,12 @@ def click():
         except Exception as e:
             print "点击 “停止查询按钮” 时出错"
         
-        brow.find_by_text("查询").click()
+        try:
+	        brow.find_by_text("查询").click()
+        except Exception as e:
+        	print "点击 查询按钮 出错"
+                	
+
         try:
             brow.find_by_text("[未完成订单]")[0].click()
             print "有未完成订单..."
