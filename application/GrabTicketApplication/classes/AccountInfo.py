@@ -17,6 +17,13 @@ def getAccountInfo(index):
             "password":"xuri123",
             "authenticationname":u"韩遂云"
             }
+    if index == 3:
+        return {
+            "username":"1170333842@qq.com",
+            "password":"zhang136769",
+            "authenticationname":u"张爱玉"
+            }
+
 
 class AccountInfo (JSONBaseClass):
     

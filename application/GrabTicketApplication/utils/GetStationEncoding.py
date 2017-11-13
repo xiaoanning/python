@@ -14,6 +14,8 @@ def getStationEncoding(stationName):
         return "%u9093%u5DDE%2CDOF"
     if stationName == "南阳":
         return "%u5357%u9633%2CNFF"
+    if stationName == "十堰":
+        return "%u5341%u5830%2CSNN"
     if stationName == "郑州":
         return "%u90D1%u5DDE%2CZZF"
     if stationName == "齐齐哈尔":

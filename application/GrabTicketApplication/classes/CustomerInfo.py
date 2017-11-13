@@ -22,15 +22,40 @@ def getCustomerInfo(index):
                 }
     if index == 2 :
         return {
-            "fromStation":"齐齐哈尔",
+                "fromStation":"齐齐哈尔",
                 "toStation":"北京",
-                    "fromDate":"2017-09-29",
-                    "passengerList":[u"高桂春"],
-                    "trainNumList":["T48"],
-                    "seatTypeList":["软卧"],
-                    "priorityType":"1",
-                    "bookingTime":"2017-08-31 08:50:50",
+                "fromDate":"2017-09-29",
+                "passengerList":[u"高桂春"],
+                "trainNumList":["T48"],
+                "seatTypeList":["软卧"],
+                "priorityType":"1",
+                "bookingTime":"2017-08-31 08:50:50",
                 }
+
+    if index == 3 :
+        return {
+                "fromStation":"杭州",
+                "toStation":"台州",
+                "fromDate":"2017-09-30",
+                "passengerList":[u"潘崇毅"],
+                "trainNumList":["G7677"],
+                "seatTypeList":["二等座"],
+                "priorityType":"1",
+                "bookingTime":"2017-08-31 08:50:50",
+                }
+    if index == 4 :
+        return {
+                "fromStation":"十堰",
+                "toStation":"北京",
+                "fromDate":"2017-10-07",
+                "passengerList":[u"韩遂云"],
+                "trainNumList":["K590","K280"],
+                "seatTypeList":["软卧","硬卧"],
+                "priorityType":"1",
+                "bookingTime":"2017-07-14 15:00:00",
+                }
+
+
 
 #客户
 class CustomerInfo (JSONBaseClass):
@@ -63,7 +88,7 @@ class CustomerInfo (JSONBaseClass):
 def getCurrentCustomerInfo():
     
     
-    dict = getCustomerInfo(2)
+    dict = getCustomerInfo(4)
     customerInfo = CustomerInfo(dict)
     
     print "当前客户订单：" + str(customerInfo.__dict__)
